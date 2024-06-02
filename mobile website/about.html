@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about eswari mobiles in karur</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <nav>
+        <div><B>ஸ்ரீ ஈஸ்வரி</B> <b style="color: orange;">மொபைல்ஸ்</b></div>
+        <div id="menu1">
+            <ul id="menu">
+              <li><a href="index.html">home</a></li>
+              <li><a href="about.html">about</a></li>
+              <li><a href="cantact.html">cantact</a></li>
+              <li><a href="">help</a></li>
+            </ul>
+        </div>
+        <div class="bur">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+       </nav> 
+        <div class="slidecontainer" style="background-color: red;">
+       <div class="slider">
+        <input type="radio" name="radio" id="ra1">
+        <input type="radio" name="radio" id="ra2">
+        <input type="radio" name="radio" id="ra3">
+        <div class="slides first">
+            <img src="images/details.jpg.jpeg" alt="" class=".first1">
+        </div>
+        <div class="slides">
+            <img src="images/charger.jpg" alt="">
+        </div>
+        <div class="slides">
+            <img src="images/pendrive.jpg" alt="">
+        </div>
+       </div>
+    </div>
+    <div style="text-align: center; padding:30px" id="lable">
+        <label for="ra1" name="" id='radio1'></label>
+        <label for="ra2" name="" id="radio2"></label>
+        <label for="ra3" name="" id="radio3"></label>
+    </div>
+
+ <!-- <div class="imageslider" style="position: relative;">
+    <button class="left" id="btnn"><</button>
+   <button class="right" id="btnn">></button>
+ </div> -->
+<h1 style="text-align: center; font-family:cursive;color:red; margin:20px 0">Offer product</h1>
+   <section id="aboutsection">
+    <h1 style="color: rgb(255, 0, 128); font-family:cursive; text-align:center; padding:10px 20px; margin:20px auto;width:15%": >Mobile Cover</h1>
+    <div id="about1">
+         
+    </div><br>
+    <h1 style="color: rgb(255, 0, 128); font-family:cursive; text-align:center; padding:10px 20px; margin:20px auto;width:15%": >Mobile</h1><br>
+    <div id="about2">
+         
+    </div><br>
+    <h1 style="color: rgb(255, 0, 128); font-family:cursive; text-align:center; padding:10px 20px; margin:20px auto;width:15%": >charger</h1><br>
+    <div id="about3">
+         
+    </div>
+   </section>
+
+   <footer>
+    <div class="footer1">
+        <div id="fimg"><img src="images/details.jpg.jpeg" alt=""><B>ஸ்ரீ ஈஸ்வரி</B> <b style="color: orange;">மொபைல்ஸ்</b><br><address>இடம்:அரவக்குறிச்சி</address><br></div>
+        
+        <div id="fmenu1">
+            <ul id="fmenu">
+              <li><a href="">home</a></li>
+              <li><a href="">about</a></li>
+              <li><a href="">cantact</a></li>
+              <li><a href="">help</a></li>
+            </ul>
+        </div>
+    </div>
+   </footer>
+       <script src="mobile.js"></script>
+       <script src="about.js"></script>
+       <script>
+        var counter=1;
+        setInterval(function(){
+            document.getElementById('ra'+counter).checked=true;
+            counter=counter+1;
+            if(counter>3){
+                counter=1
+            }
+        },3000)
+       </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+form input{
+    padding: 15px 20px;
+    margin-top: 10px;
+}
+form p{
+    height: 8px;
+    border: 1px solid green;
+    /* width: 151px; */
+    margin: auto;
+    padding: 5px 10px;
+}
+form{
+    padding: 15px;
+    border: 1px solid red;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+}
+#form p{
+    border: none;
+    font-size: smaller;
+}
+@media only screen and (max-width:769px){
+    #form{
+        width: 90%;
+    }
+}

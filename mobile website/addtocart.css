@@ -1,0 +1,19 @@
+/* section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.root{
+    height: 400px;
+    width:50%;
+    background-color: rgb(236, 228, 104);
+}
+.con{
+    background-color: rgb(117, 82, 82);
+    display: flex;
+}
+.cart{
+    background-color: aquamarine;
+    height: 400px;
+    width:50%;
+}

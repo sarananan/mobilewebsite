@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pro,.foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+
+}
+.foot div{
+ text-align: center;
+}
+.foot a{
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-family: sans-serif;
+  padding: 10px 20px;
+  background-color: orangered;
+ 
+}
+#about1,#about2,#about3{
+    background-color: hwb(120 80% 11%);
+    padding: 10px;
+    display: grid;
+    gap: 15px;
+    justify-content:space-between;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+.pro{
+    background-color: antiquewhite;
+    border: 1px solid rgb(218, 180, 180);
+    width:270px;
+    height: 100%;
+    position: relative;
+    
+  
+}
+#proimg{
+    box-shadow: 2px 2px 35px black;
+    width: 150px;
+    height: 150px;
+}
+.abs{
+   padding: 10px 5px;
+   background-color: blue;
+   color: aliceblue;
+   font-family: cursive;
+   position: absolute;
+   left: 30%;
+   opacity: 0;
+   top:50%;
+   transform: translate(-50%,-50%);
+   transition: 300ms;
+}
+.pro:hover .abs{
+ left: 50%; 
+ opacity:1;
+}
+.imageslider{
+    background: url('images/cover.jpg');
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 3px solid black;
+    background-size: 300px 150px;
+}
+.imageslider button{
+    font-size: 30px;
+    position: absolute;
+    cursor: pointer;
+    display: block;
+}
+.slider{
+    width: 400px;
+    height: 250px;
+    border: 2px solid red;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.slidecontainer{
+    width: 400px;
+    height: 250px;
+    margin: auto;
+}
+.slider img{
+    width: 400px;
+    height: 250px;
+    display: block;
+}
+.slides{
+    width: 400px;
+    height: 250px;
+    transition: 1s;
+}
+.slider input{
+    display: none;
+}
+#lable label{
+    padding: 5px;
+    border: 2px solid red;
+    border-radius: 50%;
+    display: inline-block;
+}
+#lable label:hover{
+    background-color: red;
+}
+label:not(:last-child){
+    margin-right: 30px;
+}
+
+#ra1:checked ~ .first{
+    margin-left: 0px;
+}
+#ra2:checked ~ .first{
+    margin-left: -400px;
+}
+#ra3:checked ~ .first{
+    margin-left: -800px;
+}
+
+@media only screen and (max-width:414px){
+   .slidecontainer{
+    width: 90%;
+   }
+   .slider{
+    width: 100%;
+   }
+   .slider img{
+    width: 373px;
+   }
+   
+} 
